@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!----------------------------------------------------------------------------->
+<html>
+  <head>
+    <link rel="stylesheet" href="MyPlanner.css">
+    <script type="text/javascript" src="date_time.js"></script>
+
+    <title>Help</title>
+  </head>
+<!----------------------------------------------------------------------------->
+  <body>
+    <h1 style="text-align:center; color: blue;">MyPlanner</h1>
+
+    <!--Frame do iGo-->
+    <div class = "iGoFrameDIV">
+      <!--Imagem da frame-->
+      <img src="../Assets/iGoFrame/iGoFrameWhite.png" alt="iGoFramePNG" class="iGoFrame">
+
+      <!--MainScreen iGo-->
+      <!--Status Bar iGo-->
+      <div class="statusBar">
+        <div class="statusDay">
+          <p>MON</p>
+          <p>20th</p>
+        </div>
+
+        <div class="statusHome">
+          <a href="../HomeScreen/HomeScreen.html"><img src="../Assets/StatusBar/homeButton.png" alt="homeButtonPNG" class="homeButtonPng"></a>
+        </div>
+
+        <div class="statusHours">
+          <p><span id="date_time"></span>
+          <script type="text/javascript">window.onload = date_Hours('date_time');</script></p>
+        </div>
+
+        <div class="statusBattery">
+          <img src="../Assets/StatusBar/battery.png" alt="batteryPNG" class="batteryPng">
+        </div>
+
+        <div class="statusWeather">
+          <a href="respectTheProgrammer.html"><img src="../Assets/StatusBar/weather.png" alt="cloudPNG" class="cloudPng"></a>
+        </div>
+      </div>
+
+      <div class="touchScreen" style="text-align:center">
+        <div style="margin:10px; font-size:14px;">
+          <h1>Help</h1>
+          <p style="text-align:left">Look with your camera around and fix your sight at a point of interest to have a menu hover it. In the menu you have the name of the place and the schedule to visit it, the pictures others have submited and an option to rate the place to let others know of how good it is! You can also see more info about it in the wikipedia by clicking "learn more".</p>
+        </div>
+        <a href="MyAR.html"><img src="goBackArrow.png" alt="arrowPNG" class="ArrowPng"></a>
+      </div>
+    </div>
+  </body>
+
+</html>

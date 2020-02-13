@@ -1,0 +1,219 @@
+body{
+  font-family: sans-serif;
+}
+/******************************************************************************/
+.iGoFrameDIV{
+  /*Position and size*/
+  position: absolute;
+  top:50%;
+  left: 50%;
+  margin-left:-130px;
+  margin-top:-175px;
+  width: 260px;
+  height: 350px;
+  z-index: 0;
+  /*******************/
+}
+/******************************************************************************/
+.iGoFrame{
+  /*Position and size*/
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 260px;
+  height: 350px;
+  z-index: 2;
+  /*******************/
+
+  pointer-events: none;
+}
+/******************************************************************************/
+.statusBar{
+  /*Position and size*/
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 260px;
+  height: 40px;
+  z-index: 1;
+  /*******************/
+
+  text-align: center;
+
+  background-color: rgb(045,045,045);
+}
+/******************************************************************************/
+.statusDay{
+  /*Position and size*/
+  display: inline-block;
+  position: relative;
+  float:left;
+  width: 43px;
+  height: 33px;
+  margin-top: 7px;
+  margin-left: 7px;
+  /*******************/
+
+  /*Alinha horizontal e verticalmente*/
+  text-align: center;
+  background-color: none;
+}
+
+.statusDay p{
+  font-size: 12px;
+  color: white;
+
+  margin: 1px;
+}
+/******************************************************************************/
+.statusHome{
+  /*Position and size*/
+  display: inline-block;
+  position: relative;
+  float:left;
+  width: 50px;
+  height: 33px;
+  margin-top: 7px;
+  /*******************/
+
+  /*Alinha horizontal e verticalmente*/
+  text-align: center;
+  vertical-align: middle;
+  line-height: 33px;
+  background-color: none;
+}
+
+.homeButtonPng{
+  position: relative;
+  height: 75%;
+  margin: 3px;
+  float:left;
+}
+/******************************************************************************/
+.statusHours{
+  display: inline-block;
+  position: relative;
+
+  width: 45px;
+  height: 33px;
+  margin-top: 7px;
+
+  /*Alinha horizontal e verticalmente*/
+  text-align: center;
+  vertical-align: middle;
+  line-height: 33px;
+  background-color: none;
+}
+
+.statusHours p{
+  font-size: 19px;
+  color: white;
+
+  margin: 0px;
+}
+/******************************************************************************/
+.statusWeather{
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 33px;
+  margin-top: 7px;
+
+  /*Alinha horizontal e verticalmente*/
+  text-align: center;
+  vertical-align: middle;
+  line-height: 33px;
+  float: right;
+
+  overflow: inherit;
+  background-color: none;
+}
+
+.cloudPng{
+  position: relative;
+  height: 95%;
+  margin: 1px;
+  margin-right: 5px
+  float: right;
+}
+/******************************************************************************/
+.statusBattery{
+  display: inline-block;
+  position: relative;
+  float: right;
+  width: 43px;
+  height: 33px;
+  margin-top: 7px;
+  margin-right: 7px;
+
+  /*Alinha horizontal e verticalmente*/
+  text-align: center;
+  vertical-align: middle;
+  line-height: 33px;
+
+  overflow: inherit;
+  background-color: none;
+}
+
+.batteryPng{
+  position: relative;
+  height: 70%;
+  margin: 5px;
+  margin-left: 10px;
+
+}
+/******************************************************************************/
+.touchScreen{
+  position:absolute;
+  top:40px;
+  left: 7px;
+  width: 246px;
+  height: 303px;
+  z-index: 1;
+
+}
+
+.touchScreenDock{
+  position:absolute;
+  z-index: 1;
+  left: 0px;
+  top:262px;
+  width: 246px;
+  height: 41px;
+  background-color: red;
+}
+/******************************************************************************/
+
+.button1{
+  position: relative;
+  vertical-align: middle;
+  line-height: 303px;
+
+  display: block;
+  top: 8px;
+  left:65px;
+
+  width: 110px;
+  float:left;
+}
+
+.button2{
+  position: relative;
+  vertical-align: middle;
+  line-height: 303px;
+
+  top: 12px;
+  left: 65px;
+
+  display: block;
+
+  float: right;
+  width: 110px;
+}
+
+.helpPng{
+  position: relative;
+  width: 30px;
+  top: 7px;
+  left:108px;
+}

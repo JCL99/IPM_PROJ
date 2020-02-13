@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!----------------------------------------------------------------------------->
+<html>
+  <head>
+    <link rel="stylesheet" href="MyAR.css">
+    <script type="text/javascript" src="date_time.js"></script>
+
+    <title>MyARView</title>
+  </head>
+<!----------------------------------------------------------------------------->
+  <body>
+    <h1 style="text-align:center; color: blue;">MyARView</h1>
+
+    <!--Frame do iGo-->
+    <div class = "iGoFrameDIV">
+      <!--Imagem da frame-->
+      <img src="../Assets/iGoFrame/iGoFrameWhite.png" alt="iGoFramePNG" class="iGoFrame">
+
+      <!--MainScreen iGo-->
+      <!--Status Bar iGo-->
+      <div class="statusBar">
+        <div class="statusDay">
+          <p>MON</p>
+          <p>20th</p>
+        </div>
+
+        <div class="statusHome">
+          <a href="../HomeScreen/HomeScreen.html"><img src="../Assets/StatusBar/homeButton.png" alt="homeButtonPNG" class="homeButtonPng"></a>
+        </div>
+
+        <div class="statusHours">
+          <p><span id="date_time"></span>
+          <script type="text/javascript">window.onload = date_Hours('date_time');</script></p>
+        </div>
+
+        <div class="statusBattery">
+          <img src="../Assets/StatusBar/battery.png" alt="batteryPNG" class="batteryPng">
+        </div>
+
+        <div class="statusWeather">
+          <a href="respectTheProgrammer.html"><img src="../Assets/StatusBar/weather.png" alt="cloudPNG" class="cloudPng"></a>
+        </div>
+      </div>
+
+      <div class="touchScreen">
+        <img src="Eifel.gif" alt="EifelGIF" class="Eifel">
+          <!--<img src="statusBar.png" alt="statusBarPNG" class="statusBar">-->
+
+          <a href="respectTheProgrammer.html"><img src="twopeople.png" alt="twoPeoplePNG" class="twoPeoplePng"></a>
+
+          <div class="myArMenu">
+            <table>
+              <tr><th colspan=3>Torre Eiffel</th></tr>
+              <tr>
+                <td><a href="horario.html"><img src="clock.png" alt="clockPNG" class="clockPng"></a></td>
+                <td><a href="MyArEiffelPhotos.html"><img src="photos.png" alt="photosPNG" class="photosPng"></a></td>
+                <td><a href="rating.html"><img src="starRating.png" alt="starRatingPNG" class="starRatingPng"></a></td>
+              </tr>
+              <tr>
+                <td colspan=3><a style="text-decoration:none; color:black;" href="learnMore.html">Learn More</a></td>
+              </tr>
+            </table>
+          </div>
+
+      </div>
+    </div>
+  </body>
+
+</html>

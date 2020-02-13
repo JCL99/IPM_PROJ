@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!----------------------------------------------------------------------------->
+<html>
+  <head>
+    <link rel="stylesheet" href="HomeScreen.css">
+    <script type="text/javascript" src="date_time.js"></script>
+
+    <title>iGo Home Screen</title>
+  </head>
+<!----------------------------------------------------------------------------->
+  <body>
+    <h1 style="text-align:center; color: blue;">iGo Home Screen</h1>
+
+    <!--Frame do iGo-->
+    <div class = "iGoFrameDIV">
+      <!--Imagem da frame-->
+      <img src="../Assets/iGoFrame/iGoFrameWhite.png" alt="iGoFramePNG" class="iGoFrame">
+
+      <!--MainScreen iGo-->
+      <!--Status Bar iGo-->
+      <div class="statusBar">
+        <div class="statusDay">
+          <p>MON</p>
+          <p>20th</p>
+        </div>
+
+        <div class="statusHome">
+          <!--<a href="mainScreen.html"><img src="../Assets/StatusBar/homeButton.png" alt="homeButtonPNG" class="homeButtonPng"></a>-->
+        </div>
+
+        <div class="statusHours">
+          <p><span id="date_time"></span>
+          <script type="text/javascript">window.onload = date_Hours('date_time');</script></p>
+        </div>
+
+        <div class="statusBattery">
+          <img src="../Assets/StatusBar/battery.png" alt="batteryPNG" class="batteryPng">
+        </div>
+
+        <div class="statusWeather">
+          <a href="respectTheProgrammer.html"><img src="../Assets/StatusBar/weather.png" alt="cloudPNG" class="cloudPng"></a>
+        </div>
+      </div>
+
+      <div class="touchScreen">
+        <div class="vertical-menu">
+          <a href="../MyWay/MyWay.html">
+            MyWay
+          </a>
+          <!--<a href="respectTheProgrammer.html">MyWeb</a>-->
+          <a href="../MyArView/MyAR.html">MyARView</a>
+          <!--<a href="respectTheProgrammer.html">MyConverter</a>-->
+          <a href="../MyPlanner/MyPlanner.html">MyPlanner</a>
+        </div>
+        <div class="touchScreenDock">
+          <a href="mainScreen.html"><img src="../Assets/HomeScreen/settings.png" alt="homeButtonPNG" class="settingsPng"></a>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

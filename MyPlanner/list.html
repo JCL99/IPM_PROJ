@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!----------------------------------------------------------------------------->
+<html>
+  <head>
+    <link rel="stylesheet" href="list.css">
+    <script type="text/javascript" src="date_time.js"></script>
+
+    <title>MyPlanner</title>
+  </head>
+<!----------------------------------------------------------------------------->
+  <body>
+    <h1 style="text-align:center; color: blue;">MyPlanner</h1>
+
+    <!--Frame do iGo-->
+    <div class = "iGoFrameDIV">
+      <!--Imagem da frame-->
+      <img src="../Assets/iGoFrame/iGoFrameWhite.png" alt="iGoFramePNG" class="iGoFrame">
+
+      <!--MainScreen iGo-->
+      <!--Status Bar iGo-->
+      <div class="statusBar">
+        <div class="statusDay">
+          <p>MON</p>
+          <p>20th</p>
+        </div>
+
+        <div class="statusHome">
+          <a href="../HomeScreen/HomeScreen.html"><img src="../Assets/StatusBar/homeButton.png" alt="homeButtonPNG" class="homeButtonPng"></a>
+        </div>
+
+        <div class="statusHours">
+          <p><span id="date_time"></span>
+          <script type="text/javascript">window.onload = date_Hours('date_time');</script></p>
+        </div>
+
+        <div class="statusBattery">
+          <img src="../Assets/StatusBar/battery.png" alt="batteryPNG" class="batteryPng">
+        </div>
+
+        <div class="statusWeather">
+          <a href="respectTheProgrammer.html"><img src="../Assets/StatusBar/weather.png" alt="cloudPNG" class="cloudPng"></a>
+        </div>
+      </div>
+
+      <div class="touchScreen">
+        <a href="MyPlanner.html"><img src="goBackArrow.png" alt="arrowPNG" class="ArrowPng"></a>
+        <div id="myDIV" class="header">
+          <h2 style="margin:5px">My Expenses</h2>
+          <input type="text" id="myInput" placeholder="Expense...">
+          <span onclick="newElement()" class="addBtn">Add</span>
+        </div>
+        <ul id="myUL">
+        </ul>
+      </div>
+    </div>
+  </body>
+
+  <script>
+  // Create a "close" button and append it to each list item
+  var myNodelist = document.getElementsByTagName("LI");
+  var i;
+  for (i = 0; i < myNodelist.length; i++) {
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    myNodelist[i].appendChild(span);
+  }
+
+  // Click on a close button to hide the current list item
+  var close = document.getElementsByClassName("close");
+  var i;
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+
+  // Add a "checked" symbol when clicking on a list item
+  var list = document.querySelector('ul');
+  list.addEventListener('click', function(ev) {
+    if (ev.target.tagName === 'LI') {
+      ev.target.classList.toggle('checked');
+    }
+  }, false);
+
+  // Create a new list item when clicking on the "Add" button
+  function newElement() {
+    var li = document.createElement("li");
+    var inputValue = document.getElementById("myInput").value;
+    var t = document.createTextNode(inputValue);
+    li.appendChild(t);
+    if (inputValue === '') {
+      alert("You must write something!");
+    } else {
+      document.getElementById("myUL").appendChild(li);
+    }
+    document.getElementById("myInput").value = "";
+
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    li.appendChild(span);
+
+    for (i = 0; i < close.length; i++) {
+      close[i].onclick = function() {
+        var div = this.parentElement;
+        div.style.display = "none";
+      }
+    }
+}
+</script>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!----------------------------------------------------------------------------->
+<html>
+  <head>
+    <link rel="stylesheet" href="MyWay.css">
+    <script type="text/javascript" src="date_time.js"></script>
+
+    <title>MyPlanner</title>
+  </head>
+<!----------------------------------------------------------------------------->
+  <body>
+    <h1 style="text-align:center; color: blue;">MyPlanner</h1>
+
+    <!--Frame do iGo-->
+    <div class = "iGoFrameDIV">
+      <!--Imagem da frame-->
+      <img src="../Assets/iGoFrame/iGoFrameWhite.png" alt="iGoFramePNG" class="iGoFrame">
+
+      <!--MainScreen iGo-->
+      <!--Status Bar iGo-->
+      <div class="statusBar">
+        <div class="statusDay">
+          <p>MON</p>
+          <p>20th</p>
+        </div>
+
+        <div class="statusHome">
+          <a href="../HomeScreen/HomeScreen.html"><img src="../Assets/StatusBar/homeButton.png" alt="homeButtonPNG" class="homeButtonPng"></a>
+        </div>
+
+        <div class="statusHours">
+          <p><span id="date_time"></span>
+          <script type="text/javascript">window.onload = date_Hours('date_time');</script></p>
+        </div>
+
+        <div class="statusBattery">
+          <img src="../Assets/StatusBar/battery.png" alt="batteryPNG" class="batteryPng">
+        </div>
+
+        <div class="statusWeather">
+          <a href="respectTheProgrammer.html"><img src="../Assets/StatusBar/weather.png" alt="cloudPNG" class="cloudPng"></a>
+        </div>
+      </div>
+
+      <div class="touchScreen">
+        <table>
+          <tr>
+            <td><a href="HomeScreen.html"><img src="button1.png" alt="FindPlaces" class="button1"></a></td>
+          </tr>
+          <tr>
+            <td><a href="places.html"><img src="button2.png" alt="MyRoute" class="button2"></a></td>
+          </tr>
+
+        </table>
+        <a href="helpMyWay.html"><img src="twoPeople.png" alt="helpPNG" class="helpPng"></a>
+      </div>
+    </div>
+  </body>

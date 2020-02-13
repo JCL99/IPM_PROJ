@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!----------------------------------------------------------------------------->
+<html>
+  <head>
+    <link rel="stylesheet" href="MyAR.css">
+    <script type="text/javascript" src="date_time.js"></script>
+
+    <title>MyARView</title>
+  </head>
+<!----------------------------------------------------------------------------->
+  <body>
+    <h1 style="text-align:center; color: blue;">MyARView</h1>
+
+    <!--Frame do iGo-->
+    <div class = "iGoFrameDIV">
+      <!--Imagem da frame-->
+      <img src="../Assets/iGoFrame/iGoFrameWhite.png" alt="iGoFramePNG" class="iGoFrame">
+
+      <!--MainScreen iGo-->
+      <!--Status Bar iGo-->
+      <div class="statusBar">
+        <div class="statusDay">
+          <p>MON</p>
+          <p>20th</p>
+        </div>
+
+        <div class="statusHome">
+          <a href="../HomeScreen/HomeScreen.html"><img src="../Assets/StatusBar/homeButton.png" alt="homeButtonPNG" class="homeButtonPng"></a>
+        </div>
+
+        <div class="statusHours">
+          <p><span id="date_time"></span>
+          <script type="text/javascript">window.onload = date_Hours('date_time');</script></p>
+        </div>
+
+        <div class="statusBattery">
+          <img src="../Assets/StatusBar/battery.png" alt="batteryPNG" class="batteryPng">
+        </div>
+
+        <div class="statusWeather">
+          <a href="respectTheProgrammer.html"><img src="../Assets/StatusBar/weather.png" alt="cloudPNG" class="cloudPng"></a>
+        </div>
+      </div>
+
+        <div class="touchScreen">
+          <iframe class="inlineFrameExample" scrolling="yes" seamless="seamless"
+          title="Inline Frame Example"
+          width=100%
+          height=90%
+          src="https://pt.m.wikipedia.org/wiki/Torre_Eiffel">
+        </iframe>
+
+        <a href="MyAR.html"><img src="goBackArrow.png" alt="twoPeoplePNG" class="twoPeoplePng" style="left:110px; top:-3px;"></a>
+
+        </div>
+    </div>
+  </body>
+
+</html>
